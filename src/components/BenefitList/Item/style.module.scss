@@ -1,0 +1,10 @@
+.item {
+  display: flex;
+  align-items: start;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+
+  svg {
+    flex-shrink: 0;
+  }
+}

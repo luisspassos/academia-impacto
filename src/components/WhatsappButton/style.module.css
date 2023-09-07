@@ -1,0 +1,23 @@
+.btn {
+  position: fixed;
+  border-radius: 50%;
+  width: 7rem;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transition: var(--transition-duration) filter;
+  background-color: var(--whatsapp-color);
+  color: var(--whatsapp-border-color);
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  margin: 4.4rem;
+  z-index: 3;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.281);
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}

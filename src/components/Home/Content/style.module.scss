@@ -1,0 +1,23 @@
+@import '../../../styles/breakpoints';
+
+.content {
+  flex: 1;
+  margin-top: 1rem;
+
+  @media (min-width: 93.75rem) {
+    align-self: center;
+    margin-top: 0;
+  }
+
+  @media (max-width: $small-mobile) {
+    padding-right: var(--padding-inline);
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 2.5vh;
+  margin-top: 1rem;
+}

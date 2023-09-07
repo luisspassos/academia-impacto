@@ -1,0 +1,7 @@
+@import '../../../../styles/breakpoints';
+
+.nav {
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
+  }
+}

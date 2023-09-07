@@ -1,0 +1,28 @@
+.plan {
+  flex-shrink: 0;
+  height: 49.7em;
+  border-radius: 0.2em;
+  background-color: var(--smooth-background-light);
+  font-size: 1rem;
+  max-width: 32em;
+  width: 100%;
+  padding: 3.7em 2.4em;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 30%,
+    100% 97%,
+    86% 100%,
+    30% 100%,
+    0 100%,
+    0% 30%
+  );
+
+  &.highlight {
+    background-image: var(--gradient);
+    font-size: 0.72em;
+    color: var(--text-color-light);
+  }
+}

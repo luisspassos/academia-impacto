@@ -1,0 +1,13 @@
+.benefits {
+  font-size: 1.5em;
+  gap: 0.5em;
+  margin-top: 1.7em;
+
+  li {
+    gap: max(0.4em, 8px);
+
+    svg {
+      font-size: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+
+  span {
+    font-weight: bold;
+  }
+}

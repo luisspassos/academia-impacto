@@ -1,0 +1,28 @@
+@import '../../../../../styles/breakpoints';
+
+.button {
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  background-color: var(--smooth-background-light-99);
+  border-radius: 50%;
+  --size: 7rem;
+  width: var(--size);
+  height: var(--size);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(2px);
+
+  @media (max-width: $plans) {
+    display: none;
+  }
+
+  svg {
+    fill: url(#svgGradient);
+    transition: var(--transition-duration) transform;
+  }
+}

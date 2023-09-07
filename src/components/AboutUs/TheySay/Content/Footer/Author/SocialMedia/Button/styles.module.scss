@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  background-image: linear-gradient(
+    120deg,
+    var(--smooth-background-light) 50%,
+    var(--accent-color-medium)
+  );
+  padding: 1rem;
+  border-radius: 50%;
+  transition: var(--transition-duration) filter;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}

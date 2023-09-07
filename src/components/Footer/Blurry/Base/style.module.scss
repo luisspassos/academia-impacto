@@ -1,0 +1,10 @@
+.base {
+  width: 50%;
+  height: 100%;
+  background-color: var(--accent-color-medium);
+  position: absolute;
+  border-radius: 50%;
+  bottom: -50%;
+  filter: blur(20rem);
+  opacity: 0.8;
+}

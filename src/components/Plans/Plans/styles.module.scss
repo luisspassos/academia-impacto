@@ -1,0 +1,20 @@
+@import '../../../styles/breakpoints';
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.plans {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+  @media (max-width: $plans) {
+    flex-direction: column;
+  }
+}

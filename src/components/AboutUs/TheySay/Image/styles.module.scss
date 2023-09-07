@@ -1,0 +1,51 @@
+.container {
+  --clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 70%,
+    100% 89%,
+    89% 100%,
+    0 100%,
+    0% 70%,
+    0% 35%,
+    0 0
+  );
+  --margin: -1.7rem;
+
+  flex-shrink: 0;
+  position: relative;
+  align-self: center;
+
+  div {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    z-index: -1;
+
+    &:first-child {
+      border: 2px solid;
+      border-image: var(--gradient) 1;
+      top: 0;
+      left: 0;
+      margin: var(--margin) 0 0 var(--margin);
+    }
+
+    &:last-child {
+      background-image: var(--gradient);
+      clip-path: var(--clip-path);
+      right: 0;
+      bottom: 0;
+      margin: 0 -1.7rem -1.7rem 0;
+    }
+  }
+
+  img {
+    display: block;
+    width: 35rem;
+    flex-shrink: 0;
+    height: 39rem;
+    clip-path: var(--clip-path);
+    object-fit: cover;
+  }
+}

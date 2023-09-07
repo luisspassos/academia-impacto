@@ -1,0 +1,45 @@
+.link {
+  color: var(--text-color-dark);
+  transition: var(--transition-duration) color;
+  display: block;
+  overflow-x: hidden;
+  font-size: max(1.6rem, 14px);
+}
+
+.link:hover {
+  color: var(--text-color-medium);
+}
+
+.focused {
+  color: var(--text-color-light);
+  position: relative;
+}
+
+@keyframes fill {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.focused::after {
+  animation-name: fill;
+  animation-duration: var(--transition-duration);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--accent-color-medium);
+  bottom: 0;
+  right: 0;
+}
+
+.focused.right::after {
+  transform: translateX(100%);
+}
+
+.focused.left::after {
+  transform: translateX(-100%);
+}

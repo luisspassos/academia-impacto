@@ -1,0 +1,18 @@
+.title {
+  background-color: var(--smooth-background);
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1.3rem;
+  --border-radius: 3rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.6%;
+}
+
+.title em {
+  font-style: normal;
+  background-image: var(--gradient);
+  border-radius: var(--border-radius);
+  padding: 0.3rem 1rem;
+}

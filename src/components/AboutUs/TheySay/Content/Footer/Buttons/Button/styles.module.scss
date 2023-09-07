@@ -1,0 +1,26 @@
+.button {
+  background-color: transparent;
+  font-size: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --size: 4rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #ffffff30;
+  }
+
+  &.blocked {
+    cursor: not-allowed;
+    color: var(--text-color-dark);
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

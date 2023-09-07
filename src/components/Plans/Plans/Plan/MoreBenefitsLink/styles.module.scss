@@ -1,0 +1,23 @@
+.link {
+  display: inline-flex;
+  align-self: baseline;
+  align-items: center;
+  color: currentColor;
+  transition: var(--transition-duration) filter;
+  font-size: 1.5em;
+  letter-spacing: 0.075em;
+  gap: 0.4em;
+  margin-top: 1em;
+
+  svg {
+    transition: var(--transition-duration) transform;
+  }
+}
+
+.link:hover {
+  filter: brightness(0.9);
+
+  svg {
+    transform: translateX(50%);
+  }
+}

@@ -1,0 +1,52 @@
+.button {
+  background-image: var(--gradient);
+  padding: 0.1em;
+  display: inline-block;
+  width: 100%;
+  margin-top: auto;
+  height: 5em;
+  background-color: transparent;
+  position: relative;
+  --clip-path: polygon(0 0, 100% 0, 100% 68%, 89% 100%, 25% 100%, 0 100%);
+  clip-path: var(--clip-path);
+
+  .content {
+    background-color: var(--smooth-background-light);
+    transition: var(--transition-duration) background-color;
+    height: 100%;
+    clip-path: var(--clip-path);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    color: var(--text-color-light);
+  }
+
+  &:hover {
+    .content {
+      background-color: transparent;
+    }
+  }
+
+  &.highlight {
+    background-color: var(--text-color-light);
+    background-image: none;
+    transition: var(--transition-duration) filter;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+
+    .content {
+      background-color: transparent;
+
+      > div {
+        font-weight: 800;
+        background-image: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.button {
+  clip-path: var(--polygon);
+  background-image: var(--gradient);
+  background-color: transparent;
+  font-size: 2.6rem;
+
+  font-weight: bold;
+
+  color: var(--text-color-light);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 1rem;
+
+  padding-inline: 2rem;
+  transition: var(--transition-duration) filter;
+  margin-top: 1.6%;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button svg {
+  transition: var(--transition-duration) transform;
+  transform: translateX(0);
+}
+
+.button:hover svg {
+  transform: translateX(0.5rem);
+}

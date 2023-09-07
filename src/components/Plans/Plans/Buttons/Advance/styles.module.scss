@@ -1,0 +1,10 @@
+.button {
+  right: 0;
+  transform: translateX(50%);
+
+  &:hover {
+    svg {
+      transform: translateX(10%);
+    }
+  }
+}

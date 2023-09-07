@@ -1,0 +1,18 @@
+@import '../../../../styles/breakpoints.scss';
+
+.button {
+  display: none;
+  background-color: transparent;
+  color: currentColor;
+  font-size: 4rem;
+  border: 0;
+  transition: var(--modal-animation-duration) transform;
+
+  @media (max-width: $breakpoint-tablet) {
+    display: flex;
+  }
+
+  &.open {
+    transform: rotate(-90deg);
+  }
+}

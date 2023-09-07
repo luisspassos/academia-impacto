@@ -1,0 +1,15 @@
+.icon {
+  --size: 5em;
+  width: var(--size);
+  height: var(--size);
+
+  g {
+    fill: url(#svgGradient);
+  }
+
+  &.highlight {
+    g {
+      fill: url(#svgHighlight);
+    }
+  }
+}

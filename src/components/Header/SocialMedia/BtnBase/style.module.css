@@ -1,0 +1,6 @@
+.btn {
+  font-size: max(2.4rem, 20px);
+  color: currentColor;
+  height: min-content;
+  display: flex;
+}

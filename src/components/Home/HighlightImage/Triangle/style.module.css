@@ -1,0 +1,11 @@
+.triangle {
+  clip-path: polygon(51% 0, 100% 0, 100% 100%, 0 100%, 100% 0);
+  background-image: var(--gradient);
+  width: 90%;
+  aspect-ratio: 1 / 0.85;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

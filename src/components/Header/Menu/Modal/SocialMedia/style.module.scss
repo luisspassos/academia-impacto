@@ -1,0 +1,10 @@
+@import '../../../../../styles/breakpoints';
+
+.css {
+  margin-top: 6rem;
+  gap: 5rem;
+
+  @media (max-width: $breakpoint-tablet) {
+    display: flex;
+  }
+}
